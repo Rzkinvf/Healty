@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <h1 class="txt">Healthy</h1>
+    </div>
+    <div class="kotak">
+<div class="gb">
+    <img src="heal.jpg" style="width: 100%;">
+</div>
+    </div>
+    <div class="suhu">
+        <div class="txt1">
+            <h1  class="tx">Suhu Tubuh</h1>
+         </div>
+<div class="nilai">
+    <h4>HITUNG SUHU</h4>
+    <br>
+    <p class="u"></p>
+    <br>
+    <br>
+            <form id="Form" onsubmit="return false">
+                <input type="text" id="nilai" placeholder="Masukan Nilai Suhu...">
+               <div type="submit"  onclick="cek()" class="button">Cek</div>
+            </form>
+           
+            <p id="tampil"></p>
+</div>
+        </div>
+
+    </div>
+    <div class="bb">
+        <div class="txt1">
+            <h1 class="tx">Berat Badan</h1>
+        </div>
+        
+        <div class="nilai1">
+            <h4>HITUNG BERAT BADAN</h4>
+    <br>
+    <p class="u"></p>
+    <br>
+    <br>
+        <form class="form">
+        <div class="form__radio">
+            <label>
+                <input type="radio" name="sex" value="M" class="sex-male">
+                Male
+            </label>
+            <label>
+                <input type="radio" name="sex" value="Ж" class="sex-wemale">
+                Female
+            </label>
+        </div>
+            <input type="text" class="form__input weight" placeholder="Weight...">
+            <input type="text" class="form__input height" placeholder="Height...">
+            <div class="button" onclick="getResult()">Cek</div>
+        </form>
+        <p class="text__result"></p>
+    </div>
+</div>
+</body>
+
+</html>
